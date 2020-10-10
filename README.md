@@ -1,1 +1,1 @@
-# flask-ml-azure-serverless
+# flask-mi-azure-serverless
