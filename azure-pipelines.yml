@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: 'ec5650c9-afd4-44b4-8570-c110f396df0f'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'uda-nano-flaskmlservice'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: ''
+  environmentName: 'uda-nano-flaskmlservice'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
