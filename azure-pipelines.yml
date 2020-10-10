@@ -54,6 +54,10 @@ stages:
         make lint
       workingDirectory: $(projectRoot)
       displayName: 'Run lint tests'
+        
+    - task: UsePythonVersion@0
+        inputs:
+        versionSpec: 3.5.2
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
@@ -63,10 +67,6 @@ stages:
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
         replaceExistingArchive: true
-        
-    - task: UsePythonVersion@0
-        inputs:
-        versionSpec: 3.5.2
 
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       displayName: 'Upload package'
