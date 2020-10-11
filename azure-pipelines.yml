@@ -50,6 +50,8 @@ stages:
     - script: |
         python -m venv antenv
         source antenv/bin/activate
+        python --version
+        pip list
         make install
         make lint
       workingDirectory: $(projectRoot)
