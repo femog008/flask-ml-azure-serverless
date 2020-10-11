@@ -52,6 +52,7 @@ stages:
         source antenv/bin/activate
         python --version
         pip list
+        export PATH=$HOME/.local/bin:$PATH
         make install
         make lint
       workingDirectory: $(projectRoot)
